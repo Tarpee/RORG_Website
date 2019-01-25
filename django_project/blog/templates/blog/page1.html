@@ -1,0 +1,271 @@
+{% extends 'blog/base.html' %}
+{%load static%}
+<!DOCTYPE html>
+{%block content%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+  <div>
+    <!--I achived the centered effect by putting text-align:center in the div function in css file
+    then putting div before the body tag in all html files-->
+
+  <div class="parallax">
+     <div class="parallax-curtain">
+    <div class="container">
+
+  <body>
+  <br>
+  <br>
+
+
+<div class="center">
+
+
+
+  <a href="{% url 'home' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Home</a>
+  <a href="{% url 'about' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">About</a>
+  <a href="{% url 'page1' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Weapons</a>
+  <a href="{% url 'page2' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Armor</a>
+  <a href="{% url 'page3' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Garment</a>
+  <a href="{% url 'page4' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Shield</a>
+  <a href="{% url 'page5' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Footwear</a>
+  <a href="{% url 'page6' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Accesorries</a>
+  <a href="{% url 'page7' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Cards</a>
+  <a href="{% url 'page8' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Consumables</a>
+  <a href="{% url 'page9' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Gallery</a>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+  <div class="card w-120">
+  <div class="card-body">
+    <img src="{% static 'images/Gspear.png' %}" class="rounded float-left" alt="Error">
+    <br>
+    <h5 class="card-title">Glorious Spear</h5>
+    <br>
+    <p class="card-text">A weapon that has been designed specifically for battles against humans.
+Account Bound
+Class: One-Handed Spear
+<br>
+Attack: 130
+<br>
+Property: Neutral
+<br>
+Weight: 0
+<br>
+Weapon Level: 4
+<br>
+Requires Level: 80
+<br>
+Usable By: Swordman Jobs
+<br>
+<br>
+Increases physical damage on Demi-Human race targets by 95%.
+Bypass 20% of hard defense of Demi-Human race targets when performing a physical attack.
+This item is indestructible in battle.
+If upgrade level is +6 or higher,
+Aspd + 10%
+Bypass an additional 5% of hard defense of Demi-Human race targets when performing a physical attack.
+Enables Level 1 Slaughter.
+Crusader Bonus
+If upgrade level is +9 or higher,
+Adds a 10% chance of casting Level 5 Gloria Domini on the user when performing a physical attack.
+Knight Bonus
+If upgrade level is +9 or higher,
+Adds a 20% chance of casting Level 2 Fatal Wound on the target when using Pierce.</p>
+
+  </div>
+</div>
+<br>
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Gungnir.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Gungnir</h5>
+  <br>
+  <p class="card-text">A legendary spear that is known for its ability to never miss its target.
+    <br>
+Class: One-Handed Spear
+<br>
+Attack: 120
+<br>
+Property: Wind
+<br>
+Weight: 50
+<br>
+Weapon Level: 4
+<br>
+Requires Level: 4
+<br>
+Usable By: Swordman Jobs
+<br>
+<br>
+Hit + 30
+Perfect Hit + 25
+
+</div>
+</div>
+<br>
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Huntingspear.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Hunting Spear</h5>
+  <br>
+  <p class="card-text">A spear with a leaf shaped point that is designed for hunting, causing damage with its heavy weight instead of stabbing.
+<br>
+Class: One-Handed Spear
+<br>
+Attack: 180
+<br>
+Property: Neutral
+<br>
+Weight: 420
+<br>
+Weapon Level: 4
+<br>
+Requires Level: 60
+<br>
+Usable By: Lord Knight Jobs, Paladin Jobs
+<br>
+<br>
+Bypass 100% of hard defense of Brute race targets when performing a physical attack.
+Adds a 10% chance of casting Level 3 Vital Strike on the target when performing a physical attack.
+Adds a 10% chance of gaining Meat when a Brute race monster is killed.
+Knight Bonus
+Aspd - 5%
+<br>
+Set Bonus
+Battle Hook [1] or Hunting Spear [1] or Long Horn [1]
+Tournament Shield [1]
+<br>
+<br>
+Atk + 4%
+Def + 2</p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Pike.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Pike</h5>
+  <br>
+  <p class="card-text">A long spear that is generally issued to foot soldiers.
+<br>
+Class: One-Handed Spear
+<br>
+Attack: 60
+<br>
+Property: Neutral
+<br>
+Weight: 100
+<br>
+Weapon Level: 1
+<br>
+Requires Level: 4
+<br>
+Usable By: Swordman Jobs</p>
+</div>
+</div>
+<br>
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Imperialspear.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Imperial Spear</h5>
+  <br>
+  <p class="card-text">A beautiful spear engraved with patterns of the Rune Kingdom.
+    <br>
+Class: One-Handed Spear
+<br>
+Attack: 180
+<br>
+Property: Neutral
+<br>
+Weight: 180
+<br>
+Weapon Level: 3
+<br>
+Requires Level: 102
+<br>
+Usable By: Royal Guard
+<br>
+Matk + 40
+<br>
+Increases the damage of Banishing Point and Cannon Spear by 20%.
+Increases the damage of Banishing Point and Cannon Spear by an additional 3% per 2 upgrade levels of this item.
+<br>
+Set Bonus
+Imperial Ring
+Imperial Spear
+Increases the damage of Cannon Spear and Vanishing Point by 7% per 2 upgrade levels of Imperial Spear.
+<br>
+Set Bonus
+Imperial Guard
+Imperial Spear
+Increases the damage of Genesis Ray and Grand Cross by 10%.
+<br>
+Set Bonus
+Imperial Feather
+Imperial Guard
+Imperial Spear
+Increases the damage of Banishing Point, Cannon Spear and Shield Press by 20%.
+<br>
+Set Bonus
+<br>
+Imperial Feather
+Imperial Guard
+Imperial Ring
+Imperial Spear
+Reduces the SP cost of Banishing Point by 15.
+Reduces the SP cost of Cannon Spear by 10.
+Reduces the SP cost of Grand Cross by 30.
+Reduces the SP cost of Shield Press by 5.</p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+
+     <!--below is how you can put in links thru ordinary method-->
+    <!--  <li class="active"><a href="{% url 'home' %}">Home</a></li>
+      <li class="active"><a href="{% url 'about' %}">About</a></li>
+      <li class="active"><a href="{% url 'page1' %}">page1</a></li>
+      <li class="active"><a href="{% url 'page2' %}">page2</a></li>
+      <li class="active"><a href="{% url 'page3' %}">page3</a></li>
+    -->
+
+
+</div>
+<p>(c) Gravity Co., Ltd. & Lee MyoungJin(studio DTDS).</p>
+<p>(c) GungHo Online Entertainment, Inc. All Right Reserved.</p>
+<br>
+</div>
+</div>
+</div>
+
+
+  </body>
+
+
+</html>
+{%endblock content%}

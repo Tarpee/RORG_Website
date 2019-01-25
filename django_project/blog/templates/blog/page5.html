@@ -1,0 +1,219 @@
+{% extends 'blog/base.html' %}
+{%load static%}
+<!DOCTYPE html>
+{%block content%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+  <div>
+    <!--I achived the centered effect by putting text-align:center in the div function in css file
+    then putting div before the body tag in all html files-->
+
+  <div class="parallax">
+     <div class="parallax-curtain">
+    <div class="container">
+
+  <body>
+  <br>
+  <br>
+
+
+<div class="center">
+
+
+
+  <a href="{% url 'home' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Home</a>
+  <a href="{% url 'about' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">About</a>
+  <a href="{% url 'page1' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Weapons</a>
+  <a href="{% url 'page2' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Armor</a>
+  <a href="{% url 'page3' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Garment</a>
+  <a href="{% url 'page4' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Shield</a>
+  <a href="{% url 'page5' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Footwear</a>
+  <a href="{% url 'page6' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Accesorries</a>
+  <a href="{% url 'page7' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Cards</a>
+  <a href="{% url 'page8' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Consumables</a>
+  <a href="{% url 'page9' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Gallery</a>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Sleipnir.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Sleipnir</h5>
+  <br>
+  <p class="card-text">Named after Odin's trusty steed, these shoes also
+mimic Sleipnir's powers.
+<br>
+Increase Movement Speed.
+<br>
+SP Recovery +15%
+<br>
+Max HP/SP +20%
+<br>
+INT + 25
+<br>
+MDEF +10
+
+<br>
+Class : Footwear
+<br>
+Defense : 5
+<br>
+Weight : 350
+<br>
+Required Level : 94
+Jobs: All</p>
+
+</div>
+</div>
+<br>
+  <div class="card w-120">
+  <div class="card-body">
+    <img src="{% static 'images/Greaves.png' %}" class="rounded float-left" alt="Error">
+    <br>
+    <h5 class="card-title">Greaves[1]</h5>
+    <br>
+    <p class="card-text">Steel boots which
+offer dependable
+foot protection.
+<br>
+Class : Footwear
+<br>
+Defense : 27
+<br>
+Weight : 75
+<br>
+Required Level : 65
+Jobs: Knight and
+Crusader Jobs
+
+  </div>
+</div>
+<br>
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Boots.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Boots[1]</h5>
+  <br>
+  <p class="card-text">A pair of heavy
+leather boots, padded
+with Lunatic fur, that
+is suited to warriors.
+<br>
+Class : Footwear
+<br>
+Defense : 16
+<br>
+Weight : 60
+<br>
+Jobs: Swordman,
+Archer, Merchant,
+Thief Classes, Taekwon Boy/Girl, Taekwon Master, and Gunslinger</p>
+</div>
+</div>
+<br>
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Diablousboots.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Diabolus Boots</h5>
+  <br>
+  <p class="card-text">Mysterious boots that automatically adjust their size to the wearer's size. They seem alive.
+<br>
+Increases MaxHP by 10 times your Base Level.
+<br>
+When worn with Diabolus Manteau, MaxHP +6%.
+<br>
+Class : Footwear
+<br>
+Defense : 15
+<br>
+Weight : 25
+<br>
+Jobs: Transcendent 2nd Class or higher</p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+
+
+<div class="card w-120">
+<div class="card-body">
+  <img src="{% static 'images/Variant.png' %}" class="rounded float-left" alt="Error">
+  <br>
+  <h5 class="card-title">Variant Shoes</h5>
+  <br>
+  <p class="card-text">Although it seems
+that whoever made
+these shoes tried to
+fix his mistakes, he
+didn't make these
+as well as he hoped.
+<br>
+Increase Max HP and
+SP by 20%.
+<br>
+Increasing
+the Upgrade Level
+will reduce Max
+SP and HP bonus,
+but will increase
+DEF bonus.
+<br>
+Class : Footwear Defense : 13
+<br>
+Weight : 50
+<br>
+Required Level : 85
+<br>
+Jobs: All Transcendent
+<br>
+Jobs except Novice</p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+
+     <!--below is how you can put in links thru ordinary method-->
+    <!--  <li class="active"><a href="{% url 'home' %}">Home</a></li>
+      <li class="active"><a href="{% url 'about' %}">About</a></li>
+      <li class="active"><a href="{% url 'page1' %}">page1</a></li>
+      <li class="active"><a href="{% url 'page2' %}">page2</a></li>
+      <li class="active"><a href="{% url 'page3' %}">page3</a></li>
+    -->
+
+
+</div>
+<p>(c) Gravity Co., Ltd. & Lee MyoungJin(studio DTDS).</p>
+<p>(c) GungHo Online Entertainment, Inc. All Right Reserved.</p>
+<br>
+</div>
+</div>
+</div>
+
+
+  </body>
+
+
+</html>
+{%endblock content%}

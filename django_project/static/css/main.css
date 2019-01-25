@@ -1,0 +1,79 @@
+
+
+
+.parallax {
+    /* The image used */
+
+    background-image: url("prontera.jpg");
+
+
+    /* Set a specific height */
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.parallax-curtain{
+
+  background:rgba(255,255,255,0.6);
+}
+
+.jumbotron{
+
+  background-image: url('tiles.jpg');
+
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 100px;
+   min-height: 100px;
+}
+
+.jumbotron p.test {
+        font-size: 90px;
+        text-shadow: 4px 4px 8px #666;
+}
+
+
+.center {
+    text-align: center;
+
+}
+
+
+img.rounded-corners {
+border-radius: 15px;
+}
+
+
+
+p {
+    font-family: 'Merriweather', serif;
+    padding: 20px;
+    color: black;
+}
+h1{
+
+font-family: 'Merriweather', serif;
+color: black;
+}
+
+/////////////
+
+
+
+
+.container{
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}

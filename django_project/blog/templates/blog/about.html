@@ -1,0 +1,57 @@
+{% extends 'blog/base.html' %}
+{%load static%}
+<!DOCTYPE html>
+
+{%block content%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+      <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+  </head>
+
+
+    <div class="parallax">
+       <div class="parallax-curtain">
+      <div class="container">
+
+  <body>
+
+    <center><div>
+    <br>
+    <br>
+
+    <a href="{% url 'home' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Home</a>
+    <a href="{% url 'about' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">About</a>
+    <a href="{% url 'page1' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Weapons</a>
+    <a href="{% url 'page2' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Armor</a>
+    <a href="{% url 'page3' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Garment</a>
+    <a href="{% url 'page4' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Shield</a>
+    <a href="{% url 'page5' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Footwear</a>
+    <a href="{% url 'page6' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Accesorries</a>
+    <a href="{% url 'page7' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Cards</a>
+    <a href="{% url 'page8' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Consumables</a>
+    <a href="{% url 'page9' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Gallery</a>
+
+</div></center>
+<div class="container">
+
+<center><p><img src="{% static 'css/RGpose1.png' %}" alt="Pineapple"></p></center>
+
+<p><img src="{% static 'css/juno1.jpg' %}" alt="Pineapple" ></p>
+
+  <br>
+  <br>
+</div>
+
+
+  </body>
+  </div>
+</div>
+</div>
+</html>
+{%endblock content%}

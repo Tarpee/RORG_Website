@@ -1,0 +1,376 @@
+{% extends 'blog/base.html' %}
+{%load static%}
+<!DOCTYPE html>
+
+{%block content%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+      <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <style>
+        img{
+           float: left;
+
+        }
+      </style>
+  </head>
+
+<!--
+  <audio autoplay loop>
+      <source src="{% static 'css/music.ogg' %}">
+        <source src="{% static 'css/thunder.ogg' %}">
+  </audio>
+
+  <audio autoplay loop>
+        <source src="{% static 'css/thunder.ogg' %}">
+  </audio>
+--><div class="parallax">
+   <div class="parallax-curtain">
+  <div class="container">
+
+
+
+
+
+
+
+    <!-- the div id below is a name that sets the identifier for the header function in the main.css-->
+
+
+
+
+
+
+
+<br>
+<br>
+
+<!--the ball pics are in the code below
+    <p><img src="{% static 'images/balls.jpg' %}" alt="Pineapple" style="width:300px;height:300px;margin-right:15px;" class="wdn-stretch rounded-corners"/></p>
+-->
+<!--
+    <a href="{% url 'home' %}" class="btn btn-primary" role="button" aria-pressed="true">Home</a>
+    <a href="{% url 'about' %}" class="btn btn-primary" role="button" aria-pressed="true">About</a>
+    <a href="{% url 'page1' %}" class="btn btn-primary" role="button" aria-pressed="true">Example</a>
+
+    old buttons the one with outline button
+    <a href="{% url 'home' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">Home</a>
+    <a href="{% url 'about' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">About</a>
+    <a href="{% url 'page1' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">page1</a>
+-->
+
+<!--this links to page 3,4,5
+    <a href="{% url 'page2' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">page2</a>
+    <a href="{% url 'page3' %}" class="btn btn-outline-primary" role="button" aria-pressed="true">page3</a>
+--><br>
+<br>
+<br>
+<div class="alert alert-primary" role="alert">
+Ragnarok Online's Tank class
+</div>
+
+
+
+
+
+
+
+
+  <br>
+
+
+<br>
+<br>
+<center><div class="container">
+
+<div class="row">
+  <div class="col-lg-12">
+
+  <div class="jumbotron">
+    <div class="container">
+
+      <p class = "test" style="color:white;">The Royal Guard</p>
+
+    </div>
+  </div>
+</div>
+</div></center>
+<body>
+
+
+<center><div class="container">
+
+
+<p><img src="{% static 'images/RG.png' %}" alt="Pineapple" style="width:400px;height:500px;margin-right:20px;"/></p>
+
+
+
+<div class="container">
+
+
+
+
+    <p>"The Royal Guard is the Tank Class of Ragnarok online,
+      <br>
+        armed with spears and swords and the RG's trademark equipment the shield
+
+        <br>
+
+        they mainly have the highest HP and Defense among RO's Classes, and can serve as good breakers of enemy lines,
+        <br>
+        <br>
+
+        high HP means better survivability during WOE or PVP, Spears also have higher range than other weapons and the shield which any good RG
+        will possess will usually be compunded with a card that greatly reduces damage,
+        <br>
+        <br>
+        the class also possesses some interesting skills that increase Def or even boost the Stats of the class greatly
+
+
+        <br>
+        <br>
+        armed with a strong weapon and a tough shield the RG can serve as an interesting character to play as in RO.
+
+
+
+    </p>
+<br>
+<br>
+
+</div>
+</div>
+<br>
+<div class="container pl-5">
+
+<div class="row">
+      <div class="col-4-lg ml-3">
+          <!-- Bootstrap Card -->
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/weapon1.jpg' %}" alt="Card One" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Weapons</h5>
+                  <p class="card-text">
+                    The main way for the character to deal damage to opponents, RG's can equip spears and one-handed swords
+
+                  </p>
+                  <a href="{% url 'page1' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-4-lg ml-3">
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/armor2.jpg' %}" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Armor</h5>
+                  <p class="card-text">
+                    Main defense equipment, can significally reduce damage taken from attacks
+                  </p>
+                  <br>
+                  <br>
+                  <a href="{% url 'page2' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-4-lg ml-3">
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/garments3.jpg' %}" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Garments</h5>
+                  <p class="card-text">
+                    Garments enhance def just like armor
+
+                  </p>
+                  <br>
+                  <br>
+                  <br>
+                  <a href="{% url 'page3' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+
+
+<div class="container pl-5">
+
+  <div class="row">
+      <div class="col-4-lg ml-3">
+          <!-- Bootstrap Card -->
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/shield4.jpg' %}" alt="Card One" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Shields</h5>
+                  <p class="card-text">
+                    This is the trademark equipment of RG's, also the equip that can greatly reduce damage and add defense
+                  </p>
+                  <br>
+                  <br>
+
+                  <a href="{% url 'page4' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-4-lg ml-3">
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/boots5.jpg' %}" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Footwear</h5>
+                  <p class="card-text">
+                      Main use of footwear is often adding HP to the character, a staple equip would be
+                      be the footwear compounded with a card that gives 10% HP increase
+                  </p>
+                  <a href="{% url 'page5' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-4-lg ml-3">
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/accessory7.jpg' %}" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Accessories</h5>
+                  <p class="card-text">
+                    Additional equips that can add attributes to the character, this is where the most
+                    powerful attributes are bestowed.
+                  </p>
+                  <br>
+                  <a href="{% url 'page6' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+
+<div class="container pl-5">
+
+  <div class="row">
+      <div class="col-4-lg ml-3">
+          <!-- Bootstrap Card -->
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/Cards.jpg' %}" alt="Card One" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Cards</h5>
+                  <p class="card-text">
+                      Cards are special items that when compounded to an equipment can give special attrbutes.
+                  </p>
+                  <a href="{% url 'page7' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-4-lg ml-3">
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/item6.jpg' %}" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                <br>
+                <br>
+                  <h5 class="card-title">Consumables</h5>
+                  <p class="card-text">
+                    items that can only be used once, usually adding hp, mp or gaining aditional stats or attributes
+                  </p>
+                  <br>
+
+                  <a href="{% url 'page8' %}"  class="btn btn-primary">Enter</a>
+
+              </div>
+          </div>
+
+      </div>
+
+      <div class="col-4-lg ml-3">
+          <div class="card" style="width:20rem;">
+              <img src="{% static 'images/Gallery.jpg' %}" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Gallery</h5>
+                  <p class="card-text">
+                    Pictures found about the RG.
+                  </p>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <a href="{% url 'page9' %}"  class="btn btn-primary">Enter</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+
+
+<p>(c) Gravity Co., Ltd. & Lee MyoungJin(studio DTDS).</p>
+<p>(c) GungHo Online Entertainment, Inc. All Right Reserved.</p>
+<br>
+</body>
+
+
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+
+        $('.col-4-lg').hover(
+            // trigger when mouse hover
+            function(){
+                $(this).animate({
+                    marginTop: "-=1%",
+                },200);
+            },
+
+
+
+            // trigger when mouse out
+            function(){
+                $(this).animate({
+                    marginTop: "0%"
+                },200);
+            }
+        );
+    });
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</html>
+
+{%endblock content%}
